@@ -1,0 +1,39 @@
+body {
+	font-family: Helvetica, sans-serif;
+	color: #EEE;
+	background-color: #888;
+	background-image: url('../images/bg.png');
+}
+
+canvas {
+	background-image: url('../images/background.png');
+	border: 5px solid #CCC;
+}
+
+section {
+	margin: 0 auto;
+	width: 800px;
+}
+
+h1 {
+	width: 400px;
+}
+
+p, h3 {
+	text-align: center;
+}
+
+#miss {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#left {
+	float: left;
+	text-align: left;
+}
+
+#right {
+	float: right;
+	text-align: right;
+}

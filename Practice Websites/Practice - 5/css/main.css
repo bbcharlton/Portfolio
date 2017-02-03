@@ -1,0 +1,394 @@
+body {
+	margin: 0;
+	font: 100%/24px 'Josefin Slab', sans-serif;
+	background-color: #333;
+}
+
+#logo {
+	float: left;
+}
+
+#logo a {
+	padding: 0px 20;
+}
+
+#logo-text {
+	font: 2em 'Righteous';
+	display: block;
+	padding: 7px 20px;
+}
+
+#hamburger {
+	position: relative;
+	display: none;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	background-image: url('../images/nav-bg.jpg');
+}
+
+nav li {
+	float: right;
+	font-family: 'Righteous';
+}
+
+nav li a {
+	text-align: center;
+	display: block;
+	padding: 15px 20px;
+	transition: background-color 0.3s;
+}
+
+nav li a:link, nav li a:visited, footer li a:link, footer li a:visited {
+	color: #EEE;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	background-color: rgba(200,0,0,0.5);
+
+}
+
+#featured, #deals, #main-checkout {
+	background-image: url('../images/retro-repeat.jpg');
+	overflow: hidden;
+}
+
+#featured ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+
+#featured li {
+	width: 24%;
+	margin: 4.16666665%;
+	padding: 0;
+	display: inline-block;
+}
+
+#featured img {
+	width: 100%;
+    height: auto;
+}
+
+#featured h1, #upcoming h1, #main-checkout h1 {
+	margin: 0;
+	padding: 25px 0;
+	font: 2em 'Righteous';
+	color: #EEE;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+#main-checkout h1 {
+	margin: 0;
+	padding: 25px 0;
+	font: 2em 'Righteous';
+	color: #EEE;
+	text-align: center;
+	width: 100%;
+}
+
+#film h1 {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+#hot-1, #film {
+	background-image: url('../images/retro-repeat2.jpg');
+	overflow: hidden;
+}
+
+#hot-2 {
+	background-image: url('../images/retro-repeat3.jpg');
+	overflow: hidden;
+}
+
+#hot-3 {
+	background-image: url('../images/retro-repeat4.jpg');
+	overflow: hidden;
+}
+
+#checkout {
+	background-image: url('../images/retro-repeat6.jpg');
+	overflow: hidden;
+}
+
+#hot-1 img, #hot-2 img, #hot-3 img, #film img {
+	float: right;
+	margin: 100px 10% 100px 0;
+	max-width: 600px;
+    height: auto;
+    box-shadow: 1px 1px 5px #333;
+}
+
+#hot-1 article, #hot-2 article, #hot-3 article, #film article {
+	overflow: hidden;
+}
+
+article section {
+	float: left;
+	width: 30%;
+	margin: 100px 0 100px 10%;
+}
+
+article section p, #deals article p {
+	font-weight: bold;
+	font-size: 1.5em;
+	line-height: 125%;
+}
+
+article section h1, #deals article h1 {
+	font-family: 'Righteous';
+	text-transform: uppercase;
+	margin: 0 0 30px 0;
+	font-size: 3em;
+	line-height: 125%;
+}
+
+article section button, #deals article button, #checkout button {
+	width: 200px;
+  	padding: 0;
+  	color: #333;
+  	font-size: 1em;
+  	background-color: #EEE;
+  	transition: background-color 0.3s;
+  	cursor: pointer;
+  	border: none;
+}
+
+#film button {
+	display: block;
+	margin: 15px auto;
+	text-align: center;
+}
+
+button a {
+	padding: 10px 0;
+	display: block;
+}
+
+button a:link, button a:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+article section button:hover, #deals article button:hover, #film button:hover {
+	background-color: #CCC;
+}
+
+#deals article {
+	margin: 25px auto;
+	color: #EEE;
+	text-align: center;
+}
+
+#upcoming {
+	background-image: url('../images/retro-repeat5.jpg');
+}
+
+#upcoming ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+
+#upcoming li {
+	margin: 25px 10px;
+	padding: 0;
+	display: inline-block;
+}
+
+#upcoming img {
+	max-width: 300px;
+	width: 100%;
+    height: auto;
+}
+
+#checkout {
+	text-align: center;
+}
+
+#checkout article {
+	padding: 75px 0;
+	width: 50%;
+	overflow: hidden;
+}
+
+#checkout button {
+	background-image: url('../images/nav-bg.jpg');
+}
+
+#checkout button a:link, #checkout button a:visited {
+	color: #EEE;
+}
+
+#checkout input {
+	padding: 15px;
+	margin: 10px 0;
+	width: 296px;
+}
+
+#login {
+	float: left;
+}
+
+#login h1, #purchase h1 {
+	font: 1.5em 'Righteous';
+	width: 296px;
+	margin: 0 auto;
+}
+
+#purchase {
+	float: right;
+}
+
+footer {
+	background-image: url('../images/footer-bg.png');
+}
+
+footer p {
+	color: #EEE;
+	text-align: center;
+	padding-top: 40px;
+	margin: 0 0 25px 0;
+}
+
+footer ul {
+	text-align: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	margin: 5px;
+	margin-bottom: 50px;
+	display: inline-block;
+}
+
+
+
+@media screen and (min-width: 841px) and (max-width: 1214px) {
+
+	article section {
+		float: none;
+		width: 60%;
+		margin: 100px auto;
+	}
+
+	#film article section {
+		margin: 50px auto;
+	}
+
+	#film button {
+		margin: 15px auto;
+	}
+
+	#hot-1 img, #hot-2 img, #hot-3 img {
+		float: none;
+		margin: 20px auto 100px auto;
+		display: block;
+		text-align: center;
+		max-width: 600px;
+		width: 100%;
+    	height: auto;
+    	box-shadow: 1px 1px 5px #333;
+	}
+
+	#film img {
+		float: none;
+		margin: 0 auto 50px auto;
+		display: block;
+		text-align: center;
+		max-width: 600px;
+		width: 100%;
+    	height: auto;
+    	box-shadow: 1px 1px 5px #333;
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 840px) {
+
+	#login, #purchase {
+		float: none;
+		margin: 0 auto;
+	}
+
+	#checkout article {
+		padding: 25px 0;
+		width: 100%;
+	}
+
+	#login h1, #purchase h1 {
+		font: 1.5em 'Righteous';
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	article section {
+		float: none;
+		width: 80%;
+		margin: 100px auto;
+	}
+
+	#film {
+		text-align: center;
+	}
+
+	#film article section {
+		margin: 50px auto;
+	}
+
+	#film button {
+		margin: 15px auto;
+	}
+
+	article section h1, #deals article h1 {
+		font-size: 2.5em;
+	}
+
+	#hot-1 img, #hot-2 img, #hot-3 img, #film img {
+		float: none;
+		margin: 20px auto 100px auto;
+		display: block;
+		text-align: center;
+		max-width: 600px;
+		width: 100%;
+    	height: auto;
+    	box-shadow: 1px 1px 5px #333;
+	}
+
+	#film img {
+		margin: 0 auto 50px auto;
+	}
+
+	nav ul li {
+		display: none;
+	}
+
+	#logo {
+		display: inline-block;
+	}
+
+	#logo a {
+		padding: 0;
+	}
+
+	#hamburger {
+		height: 54px;
+		width: auto;
+		display: inline-block;
+		float: right;
+	}
+}
+

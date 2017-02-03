@@ -1,0 +1,28 @@
+extends layout
+
+block content
+	div.container
+		h1 My Favorites:
+		each val in session.user.saves
+			.panel-group
+				.panel
+					.panel-heading
+						h3
+							form(role='form', method='POST', action="/profile/remove/")
+								input(type='hidden', name='objID', value=val.objID)
+								button(type='submit')
+									i.fa.fa-minus  
+								span= val.name
+					.panel-footer
+						if val.vidURLs
+							a.pull-right(href=val.vidURLs, target='blank')
+								i.fa.fa-3x.fa-circle.back
+								i.fa.fa-3x.fa-play-circle.yesURL
+						else if val.vidURL
+							if val.vidURL != null
+								i.fa.fa-3x.fa-circle.back
+								i.fa.fa-3x.fa-play-circle.pull-right.yesURL
+						p.pull-left= val.windowstart
+						br
+						p.pull-left= val.location
+						span.clearfix

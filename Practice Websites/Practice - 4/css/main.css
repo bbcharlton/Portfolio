@@ -1,0 +1,610 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 100% Helvetica, sans-serif;
+}
+
+/* ================================
+    !HEADER AND NAV BAR
+================================ */
+
+header {
+  background-color: #3F88C5;
+  width: 100%;
+}
+
+#logo a:hover {
+  background-color: #FFA552;
+}
+
+nav {
+  height: 5em; /* 80px */
+}
+
+nav h1 {
+  margin: 0 0 0 10%; /*0 0 0 68px*/
+}
+
+nav h1 a {
+  margin: 0;
+  float: left;
+  padding: 26px 16px;
+}
+
+nav p {
+  margin: 1.125em 0; /*18px*/
+  color: #EEE;
+  float: left;
+}
+
+nav ul {
+  height: inherit;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: right;
+}
+
+nav ul li a {
+  margin: 25px; /*12px*/
+  display: block;
+  width: 75px; /*75px*/
+  text-align: center;
+  padding: 5px; /*5px*/
+  border-radius: 0.3125em; /*5px*/
+  border: .0625em solid #EEE; /*1px*/
+}
+
+nav ul li img {
+  position: relative;
+  margin: 22px;
+  display: block;
+  text-align: center;
+  padding: 3px;
+  cursor: pointer;
+}
+
+#dropdown:hover #cart-items {
+  display: block;
+}
+
+#cart-items {
+  margin: 0;
+  text-align: center;
+  width: 68px;
+  display: none;
+  background-color: #FFA552;
+  color: #EEE;
+  padding: .3125em .375em; /*5px 6px*/
+  position: absolute;
+}
+
+nav ul li a:hover {
+  border: .0625em solid #FFA552; /*1px*/
+  background-color: #FFA552;
+}
+
+a:link, a:visited {
+  color: #EEE;
+    text-decoration: none;
+}
+
+/* ================================
+    !SECTIONS AND ARTICLES
+================================ */
+
+#cta-container {
+  clear: both;
+  background-image: url('../images/bg.jpg');
+  height: 25em; /*400px*/
+  max-width: 100%;
+  border-bottom: .625em solid #3F88C5; /*10px*/
+}
+
+#cta {
+  width: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  text-align: center;
+  padding: .625em;
+  color: #333;
+}
+
+#cta h1 {
+  margin: 0;
+  font-size: 3.125em;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+#gaming-container {
+  height: 25em; /*400px*/
+  overflow: hidden;
+  background-color: #44BBA4;
+  animation: gaming 30s infinite alternate;
+}
+
+#cameras-container {
+  overflow: hidden;
+  height: 25em; /*400px*/
+  background-color: #3F88C5;
+  animation: cameras 30s infinite alternate;
+}
+
+#tvs-container {
+  height: 25em; /*400px*/
+  background-color: #393E41;
+  animation: tvs 30s infinite alternate;
+}
+
+#monitors-container {
+  height: 25em; /*400px*/
+  background-color: #E94F37;
+  animation: monitors 30s infinite alternate;
+}
+
+#gaming-container img, #cameras-container img, #tvs-container img, #monitors-container img  {
+  float: right;
+  margin: 0;
+  padding: 0;
+  margin: 50px 10% 0 0; 
+}
+
+#gaming-container article, #cameras-container article, #tvs-container article, #monitors-container article {
+  line-height: 1.875em; /*30px*/
+  width: 40%;
+  float: left;
+  padding: .3125em; /*5px*/
+  background-color: rgba(0,0,0,0.2);
+  color: #EEE;
+  display: block;
+  position: relative;
+  top: 50%;
+  margin-left: 10%;
+  transform: translateY(-50%);
+}
+
+#gaming-container article h1, #cameras-container article h1, #tvs-container article h1, #monitors-container article h1 {
+  margin: 0 0 0 2%;
+  font-size: 3.125em; /*50px*/
+  padding: 20px 5px 5px 0;
+}
+
+#gaming-container article p, #cameras-container article p, #tvs-container article p, #monitors-container article p {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#gaming-container button, #cameras-container button, #tvs-container button, #monitors-container button {
+  width: 100px;
+  padding: 10px 0;
+  margin: 0 0 2% 80%;
+  background-color: #F6F7EB;
+  cursor: pointer;
+  border: none;
+}
+
+.product-content img {
+  width: 100%;
+  height: auto;
+}
+
+.product-content {
+  margin-top: 3.75em; /*60px*/
+  text-align: center;
+}
+
+.product-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-content ul li {
+  display: inline-block;
+  margin: 2% 2%;
+}
+
+.product-content article {
+  margin: 0; /*10px*/
+  display: inline-block;
+  clear: both;
+  width: 31.25em; /*500px*/
+  background-color: #CCC;
+  color: #EEE;
+}
+
+.product-content article h1 {
+  font-size: 1.75em; /*28px*/
+  margin: 0;
+  padding: 18px 0; /*18px 0*/
+  color: #333;
+  background-color: #FFA552;
+  text-align: center;
+}
+
+.product-content article h1:hover {
+  background-color: #BF7C3E;
+}
+
+.product-content article h1 a:link, .product-content article h1 a:visited {
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.product-content figure { /*Images are 500px x 500px*/
+  margin: 0;
+}
+
+.details-content {
+  padding-top: 3.125em; /*50px*/
+}
+
+.details-content article {
+  margin: 0 10%;
+  color: #333;
+}
+
+.details-content img {
+  width: 33.33333333%;
+  float: left;
+  height: auto;
+}
+
+.details-content #info {
+  margin: 0 5% 0 0;
+  padding: 0;
+  float: right;
+  width: 52.22222222%;
+}
+
+.details-content #info h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 3.125em;
+}
+
+.details-content #info h4 {
+  text-align: left;
+}
+
+.details-content #overview {
+  clear: left;
+}
+
+#overview h1 {
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CCC;
+}
+
+#overview p {
+  line-height: 1.5em;
+  text-align: left;
+  margin: 0 2%;
+}
+
+.details-content #info button {
+  width: 100px;
+  padding: 10px 0;
+  background-color: #FFA552;
+  cursor: pointer;
+  border: none;
+}
+
+/* ================================
+    !FOOTER
+================================ */
+
+footer {
+  clear: left;
+  height: 25em;
+  background-image: url('../images/footer-bg.png'); 
+}
+
+/* ================================
+    !MEDIA QUERIES
+================================ */
+
+@media screen and (min-width: 791px) and (max-width: 1150px) {
+  nav ul li a {
+    margin: 25px 3px;
+    padding: 5px 0;
+  }
+
+  nav h1 {
+    margin: 0 0 0 3%;
+  }
+
+  nav h1 a {
+    padding: 26px 10px;
+  }
+
+  nav ul li img {
+    position: relative;
+    margin: 22px 3px;
+    display: block;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  #cta {
+    width: auto;
+  }
+
+  #gaming-container img, #cameras-container img, #tvs-container img, #monitors-container img {
+    display: none;
+  }
+
+  #gaming-container article, #cameras-container article, #tvs-container article, #monitors-container article {
+    float: none;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .product-content article {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px) {
+  .details-content article {
+    text-align: center;
+  }
+
+  .details-content img {
+    margin: 0;
+    width: 33.33333333%;
+    height: auto;
+  }
+
+  .details-content #info {
+    text-align: left;
+    margin: 0;
+  }
+
+  .details-content #overview {
+    clear: both;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 790px) {
+  nav ul li a {
+    margin: 25px 3px;
+    padding: 5px 0;
+  }
+
+  nav h1 {
+    margin: 0 0 0 3%;
+  }
+
+  nav h1 a {
+    padding: 26px 10px;
+  }
+
+  nav ul li img {
+    position: relative;
+    margin: 22px 3px;
+    display: block;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  #cta {
+    width: auto;
+  }
+
+  #gaming-container, #cameras-container, #tvs-container, #monitors-container {
+    height: auto;
+  }
+
+  #gaming-container img, #cameras-container img, #tvs-container img, #monitors-container img {
+    display: none;
+  }
+
+  #gaming-container article, #cameras-container article, #tvs-container article, #monitors-container article {
+    width: auto;
+    margin: 0;
+    padding: .3125em; /*5px*/
+    background-color: rgba(0,0,0,0.2);
+    color: #EEE;
+    float: none;
+    top: 0;
+    transform: translateY(0);
+  }
+
+  #gaming-container button, #cameras-container button, #tvs-container button, #monitors-container button {
+    width: 100px;
+    padding: 10px 0;
+    margin: 0 0 5px 70%;
+    background-color: #F6F7EB;
+    cursor: pointer;
+    border: none;
+  }
+
+  .product-content article {
+    width: auto;
+  }
+
+  .details-content img {
+    margin: 0;
+    width: 33.33333333%;
+    float: none;
+    height: auto;
+  }
+
+  .details-content #info {
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .details-content #info h1 {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 1.875em;
+  }
+
+  .details-content #info h4 {
+    text-align: left;
+  }
+
+  #overview h1 {
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CCC;
+}
+
+#overview p {
+  text-align: left;
+  margin: 0 2%;
+}
+}
+
+/* ================================
+    !ANIMATIONS
+================================ */
+
+@keyframes gaming {
+  10% {
+    background-color: #69C9B6;
+  }
+  20% {
+    background-color: #44BBA4;
+  }
+  30% {
+    background-color: #6596D3;
+  }
+  40% {
+    background-color: #3F7BC8;
+  }
+  50% {
+    background-color: #68C6DB;
+  }
+  60% {
+    background-color: #42B8D2;
+  }
+  70% {
+    background-color: #68DB99;
+  }
+  80% {
+    background-color: #42D280;
+  }
+  90% {
+    background-color: #65D36F;
+  }
+  100% {
+    background-color: #3FC84B;
+  }
+}
+
+@keyframes cameras {
+  10% {
+    background-color: #65A0D1;
+  }
+  20% {
+    background-color: #3F88C5;
+  }
+  30% {
+    background-color: #6160DB;
+  }
+  40% {
+    background-color: #3939D2;
+  }
+  50% {
+    background-color: #3B5CDC;
+  }
+  60% {
+    background-color: #2D45A5;
+  }
+  70% {
+    background-color: #3BCFDC;
+  }
+  80% {
+    background-color: #2D9BA5;
+  }
+  90% {
+    background-color: #39D2A5;
+  }
+  100% {
+    background-color: #2A9D7B;
+  }
+}
+
+@keyframes tvs {
+  10% {
+    background-color: #616567;
+  }
+  20% {
+    background-color: #393E41;
+  }
+  30% {
+    background-color: #666771;
+  }
+  40% {
+    background-color: #40414E;
+  }
+  50% {
+    background-color: #6D7079;
+  }
+  60% {
+    background-color: #494D58;
+  }
+  70% {
+    background-color: #6D7979;
+  }
+  80% {
+    background-color: #495858;
+  }
+  90% {
+    background-color: #66716D;
+  }
+  100% {
+    background-color: #404E49;
+  }
+}
+
+@keyframes monitors {
+  10% {
+    background-color: #ED725F;
+  }
+  20% {
+    background-color: #E94F37;
+  }
+  30% {
+    background-color: #F79C57;
+  }
+  40% {
+    background-color: #F5832E;
+  }
+  50% {
+    background-color: #DB7952;
+  }
+  60% {
+    background-color: #D25727;
+  }
+  70% {
+    background-color: #DB5256;
+  }
+  80% {
+    background-color: #D2272C;
+  }
+  90% {
+    background-color: #F75794;
+  }
+  100% {
+    background-color: #F52E7A;
+  }
+}

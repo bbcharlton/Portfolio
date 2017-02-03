@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-color: #E6E6E6;
+}
+
+.health-bar {
+	height: 3%;
+	width: 50%;
+	float: left;
+	position: fixed;
+	overflow: hidden;
+	text-align: center;
+	color: #FFFFFF;
+    background-color: #09B234;
+}
+
+#backbar {
+	height: 3%;
+	width: 49.75%;
+	float: left;
+	position: fixed;
+	overflow: hidden;
+	background-color: #666666;
+}
+
+#divider {
+	height: 100%;
+	width: .5%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	background-color: #000000;
+}
+
+.container {
+	height: 100%;
+	width: 49.75%;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	background: no-repeat top center;
+}
+
+.player {
+	height: 70px;
+	width: 25%;
+	margin: 0px auto;
+	margin-top: 30%;
+	margin-left: 38.15%;
+	position: absolute;
+	bottom: 0;
+	right: 37.5%;
+	text-align: center;
+	padding-top: 25px;
+	font-size: 25px;
+	color: #FFFFFF;
+	overflow: hidden;
+	border-radius: 25px 25px 0px 0px;
+	background-color: #3E9999;
+}
+
+.menu {
+	width: 33.18%;
+	height: 40%;
+	margin-top: 50px;
+	margin-left: 8.254%;
+	position: fixed;
+	border-radius: 25px 25px 25px 25px;
+	background-color: #3E9999;
+}
+
+.button {
+	width: 25%;
+	background-color: #666666;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    padding: 15px 0px;
+    text-align: center;
+    margin-top: 65%;
+    margin-left: 16.59%;
+    border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
+}
+
+/* All code below was borrowed from w3schools.com */
+
+.dropbtn {
+    background-color: #FFFFFF;
+    color: #666666;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: #666666;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+}

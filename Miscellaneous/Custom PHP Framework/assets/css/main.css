@@ -1,0 +1,149 @@
+body {
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	background-color: #CCC;
+}
+
+nav {
+	background-color: #192A51;
+}
+
+nav .container {
+	padding: 0;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border: 0;
+	border-bottom: 2px solid #EEE;
+}
+
+a:link {
+	text-decoration: none;
+	color: #EEE;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #EEE;
+}
+
+.nav li a:hover {
+	background-color: #13203D;
+}
+
+#front {
+	height: 100vh;
+	background-image: url('../images/section1-bg.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gallery, #view-gallery {
+	background-image: url('../images/section2-bg.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gallery-more {
+	background-color: #424B54;
+}
+
+#gallery .container {
+	margin: 50px auto;
+}
+
+#gallery img {
+	padding: 25px 0;
+}
+
+#earth {
+	border-top: solid 5px #EEE;
+	background-color: #424B54;
+	color: #EEE;
+}
+
+#earth p:first-of-type {
+	padding-top: 25px;
+}
+
+#earth p {
+	line-height: 24px;
+	padding-bottom: 25px;
+}
+
+#earthImg {
+	border-radius: 50%;
+	border: 5px solid #EEE;
+	margin: 0 auto;
+	margin-top: -150px;
+	cursor: pointer;
+}
+
+#earthImg:hover {
+	animation:spin 1s linear infinite;
+}
+
+@keyframes spin { 100% {transform:rotate(360deg);}}
+
+#front h1 {
+	margin-top: 25%;
+}
+
+#gallery img{
+	cursor: pointer;
+}
+
+#gallery-more h1, #view-gallery h1 {
+	margin: 0;
+	padding: 50px 0;
+}
+
+#view-gallery a:hover, #contact:hover {
+	cursor: pointer;
+	color: #EF8354;
+}
+
+#contact {
+	display: inline-block;
+	color: #EEE;
+}
+
+progress {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+	padding: 10px 0 10px 5px;
+	margin-bottom: 25px;
+}
+
+textarea {
+	width: 100%;
+	padding: 10px 0 0px 5px;
+	margin-bottom: 25px;
+}
+
+h1 {
+	color: #EEE;
+	font-size: 50px;
+	text-align: center;
+}
+
+footer {
+	border-top: 2px solid #EEE;
+	width: 100%;
+	background-color: #192A51;
+}
+
+footer p {
+	color: #EEE;
+	text-align: center;
+	padding: 50px 0;
+	margin: 0;
+}

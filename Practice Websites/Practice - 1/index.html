@@ -1,0 +1,169 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("a").on('click', function(event) {
+
+			    if (this.hash !== "") {
+
+			      event.preventDefault();
+
+			      var hash = this.hash;
+
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        window.location.hash = hash;
+			      });
+			    }
+			  });
+			});
+		</script>
+	</head>
+	<body>
+		<div id="slideout">
+			<button type="button" id="slide-out" class="navbar-toggle collapsed glyphicon glyphicon-remove"></button>
+			<ul id="slideout-click">
+				<li><a href="#cta">Top</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#features">Web Skills</a></li>
+				<li><a href="#projects" id="last">Projects</a></li>
+			</ul>
+			<div id="empty">
+			</div>
+		</div>
+
+		<header>
+			<nav class="container navbar navbar-fixed-top">
+				<div class="navbar-header">
+					<button type="button" id="slide-in" class="navbar-toggle collapsed glyphicon glyphicon-menu-hamburger"></button>
+				</div>
+
+				<div class="collapse navbar-collapse pull-right" id="hamburger">
+					<ul class="nav navbar-nav">
+						<li><a href="#about">About</a></li>
+						<li><a href="#features">Web Skills</a></li>
+						<li><a href="#projects">Projects</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<section id="cta">
+			<article class="container">
+				<h1>Bailey Charlton</h1>
+				<h3>Portfolio</h3>
+			</article>
+		</section>
+
+		<section id="about">
+			<div class="container">	
+				<div id="me">
+					<div id="me-overlay">
+						<ul id="social-media-list">
+							<li id="facebook"><a href="https://www.facebook.com/Bailey.Reptar" target="_blank"></a></li>
+							<li id="twitter"><a href="https://twitter.com/Am_Reptar" target="_blank"></a></li>
+							<li id="linkedin"><a href="https://www.linkedin.com/in/baileycharlton" target="_blank"></a></li>
+						</ul>
+					</div>
+				</div>
+				<article>
+					<p>I'm a Full Sail student studying Web Design and Development. I've lived here in Orlando, Florida for about two years, but I'm originally from Chattanooga, Tennessee. I started my career with an internship learning Drupal and decided to expand my knowledge in web design by pursuing my career at Full Sail. I attended the University of Tennessee at Chattanooga for two years studying Software Systems in Computer Science. Overall, I have a good collection of knowledge in the IT industry with my background.</p>
+
+					<p>I grew up loving video games, music, and art. Even at 21, I still spend a good amount of time playing video games, day and night. It's what makes me happy and inspires some of my designs. I feel the same way with art, because I grew up being the only artistic member in the family, so everything I made inspired me to show it off and always try to improve my work. Lastly, music is what thrives my ambitions. It helps me think of new ideas and opens up a new world for me to explore. Through music, I stay focused on my tasks and give my best on everything I do.</p>
+
+					<p>I have many ambitions for my future, including where I want to work and how I want to live. My final goal is to end up working for Google. I've always been in love with Google's products and their work ethic, bringing the world together and improving our lives. I know that Google has extremely high standards for their work, and I put in so much effort every day to eventually meet those standards.</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="features">
+			<div class="container">
+				<h1>Web Skills</h1>
+
+				<div class="row" id="webskill-content">
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<img class="webskill img-responsive center-block" id="js" src="images/webskill-1.png">
+					</div>
+
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<img class="webskill img-responsive center-block" id="jq" src="images/webskill-2.png">
+					</div>
+
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<img class="webskill img-responsive center-block" id="html" src="images/webskill-3.png">
+					</div>
+
+					<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<img class="webskill img-responsive center-block" id="css" src="images/webskill-4.png">
+					</div>
+				</div>
+
+				<p id="features-content"></p>
+
+				<p class="hidden-feature" id="hidden-1">JavaScript is the most popular scripting language used, and there's a good reason why. It allows for developers to add interactivity with ther web applications that normal HTML and CSS couldn't do. Sometimes it can be fun to work with, but other times it can be difficult and challenging. But with my experience, I've always enjoyed applying it to my work.</p>
+
+				<p class="hidden-feature" id="hidden-2">JQuery is an extensive JavaScript library that adds a lot of usability to your websites. It has the motto "Write less, do more" which is exactly what you do with JQuery. It simplifies JavaScript and does a lot more. JQuery is great for animations too, and even has multiple plugins to help as well. One of its core features is how it traverses the DOM on your website, allowing for simple selection and editing.</p>
+
+				<p class="hidden-feature" id="hidden-3">HTML is the foundation of developing websites. Without HTML, there's nothing to reference to for styling or functionality. Good HTML semantics improve overall design, functionality, and speed of your website. Using correct semantics also helps other developers understand your code if you're working on a team project, it also helps you understand what you're doing.</p>
+
+				<p class="hidden-feature" id="hidden-4">CSS is where all the fun is at in web design. Not only is it used for styling, it's also great for animations. There are unlimited possibilities with CSS animations. From spinning objects to walking sprites, CSS can do it all. Along with animation, CSS is the core styling language for websites. You can't have a website without CSS. They go hand in hand. And only the best of the best know how to make cool websites with it.</p>
+			</div>
+		</section>
+
+		<section id="projects">
+			<div class="container">
+				<h1>Projects</h1>
+				<div class="row">
+					<article class="col-lg-6 col-md-6 col-s-12 col-xs-12">
+						<a href="https://bbcharlton.github.io/Websites/Retro/index.html" target="_blank"><img class="img-responsive center-block" src="images/website-1.png"></a>
+						<p class="text-center">Retro Design (Test Site)</p>
+					</article>
+
+					<article class="col-lg-6 col-md-6 col-s-12 col-xs-12">
+						<a href="https://bbcharlton.github.io/DWS1/DWS2_Lab2/floats.html" target="_blank"><img class="img-responsive center-block" src="images/website-2.png"></a>
+						<p class="text-center">Hero (Beginner Site)</p>
+					</article>
+
+					<article class="col-lg-6 col-md-6 col-s-12 col-xs-12">
+						<a href="https://bbcharlton.github.io/Websites/Portfolio/index.html" target="_blank"><img class="img-responsive center-block" src="images/website-3.png"></a>
+						<p class="text-center">Bootstrap (Intermediate Site)</p>
+					</article>
+
+					<article class="col-lg-6 col-md-6 col-s-12 col-xs-12">
+						<a href="https://bbcharlton.github.io/DWS1/DWS2_Lab4/index.html" target="_blank"><img class="img-responsive center-block" src="images/website-4.png"></a>
+						<p class="text-center">Shopping (Test Site)</p>
+					</article>
+
+					<article class="col-lg-6 col-md-6 col-s-12 col-xs-12">
+						<a href="https://bbcharlton.github.io/Websites/MapsAPI/index.html" target="_blank"><img class="img-responsive center-block" src="images/website-5.png"></a>
+						<p class="text-center">Google Maps (Test Site)</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<a id="back-top" class="btn glyphicon glyphicon-chevron-up pull-right" href="#cta"></a>
+			</div>
+			<div id="footer">
+				<img src="images/email.png">
+				<p>bbcharlton@fullsail.edu</p>
+				<img src="images/phone.png">
+				<p>757.619.4752</p>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

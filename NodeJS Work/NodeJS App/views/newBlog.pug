@@ -1,0 +1,21 @@
+extends layout
+
+block content
+	div.container
+		div.row
+			.panel-group.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-md-offset-3.col-lg-offset-3
+				.panel
+					.panel-heading
+						h3 Create Blog
+					.panel-body
+						form(role='form', method='POST', action="/blog/new")
+							div.form-group
+								input.form-control(type='text', name='title', placeholder='Enter title...', required='', autofocus='')
+							div.form-group
+								input.form-control(type='text', name='description', placeholder='Enter description...', required='')
+							div.form-group
+								textarea.form-control(name='body', placeholder='Enter body...', required='')
+							div.form-group
+								button.btn.col-xs-12.col-sm-12.col-md-12.col-lg-12(type='submit') Create
+							div.form-group
+								a.btn.cancel.col-xs-12.col-sm-12.col-md-12.col-lg-12(href='/blog') Cancel

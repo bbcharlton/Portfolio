@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+	<!--Bailey Charlton
+	    PRW 8/29/16  -->
+	    <link href="css/main.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<section id="cta">
+			<h1>Your code must be written in ES2015 ONLY!! Your examples must be orginal. You can not use examples from any web page. You must use an external files for both the JavaScript and CSS files. Your web page must be professionally styled.</h1>
+		</section>
+
+		<section id="arrow">
+			<h2>Arrow Functions</h2>
+			<button id="arrBtn">Click me!</button>
+		</section>
+
+		<section id="block">
+			<h2>Block Scope</h2>
+			<p>The variable x is set to <span id="block-num"></span>.</p>
+			<p>Let's change x to <span id="block-num2"></span>.</p>
+			<pre>
+function fooX() {
+    let x = 2;
+    document.querySelector('#block-num').innerHTML = x;
+    if (x < 100) {
+    	let x = 100;
+    	document.querySelector('#block-num2').innerHTML = x;
+    }
+    document.querySelector('#block-num3').innerHTML = x;
+}
+
+fooX();</pre>
+			<p>Although we changed x, the variable is still <span id="block-num3"></span> at the end.</p>
+		</section>
+
+		<section id="classes">
+			<h2>Classes and Inheritance</h2>
+			<p>Create a new person with the below input.</p>
+			<div id="class-input">
+				<input type="text" id="in-1" placeholder="Type of person..."></input>
+				<input type="text" id="in-2" placeholder="Size of person..."></input>
+				<input type="text" id="in-3" placeholder="Mood of person..."></input>
+				<button id="classBtn">Create</button>
+			</div>
+			<p>Your person is a <span id="personType">___</span> type. Their size is <span id="personSize">___</span> and their current mood is <span id="personMood">___</span>.</p>
+			<p id="inherit"></p>
+		</section>
+
+		<section id="default">
+			<h2>Default Parameters</h2>
+			<button id="defBtn">Swap colors!</button>
+		</section>
+
+		<section id="destruct">
+			<h2>Destructured Assignment</h2>
+			<p>Let's say we have an array [Dog, Cat, Fish, Monkey]</p>
+			<p>With the following code:</p>
+			<pre>
+var a, b, c, d;
+
+[a, b, c, d] = ['Dog', 'Cat', 'Fish', 'Monkey'];
+
+document.querySelector('#animal-a').innerHTML = a;
+document.querySelector('#animal-b').innerHTML = b;
+document.querySelector('#animal-c').innerHTML = c;
+document.querySelector('#animal-d').innerHTML = d;</pre>
+			<p>a = <span id="animal-a"></span>, b = <span id="animal-b"></span>, c = <span id="animal-c"></span>, and d = <span id="animal-d"></span>.</p>
+		</section>
+
+		<section id="generator">
+			<h2>Generators</h2>
+			<p>Enter a number to generate it and replace the button text.</p>
+			<div id="gen-input">
+				<input type="text" id="gen-in" placeholder="0"></input>
+				<button id="genBtn">Generate</button>
+			</div>
+		</section>
+
+		<section id="promise">
+			<h2>Promises</h2>
+		</section>
+
+		<section id="rest">
+			<h2>Rest Parameters</h2>
+			<p>We have a function 'restPar(1, 5, 3, 5, 7)'. What's the Rest Parameter count?</p>
+			<p>If you think it's 21, you're wrong. It's actually <span id="rest-count"></span>.</p>
+			<p>All we're doing is counting the amount of arguments the function has.</p>
+		</section>
+
+		<section id="spread">
+			<h2>Spread Operators</h2>
+			<p>Let's chain some arrays and see what we get.</p>
+			<pre>
+var arr1 = [1,2,3],
+ 	arr2 = [arr1, [4,5,6]],
+ 		arr3 = [arr2,[7,8,9]],
+ 			arr4 = [arr3, [10,11,12]],
+ 				arr5 = [arr4, [13,14,15]];
+document.querySelector('#spreadResult').innerHTML = arr5;</pre>
+			<p>And we get <span id="spreadResult"></span></p>	
+		</section>
+
+		<section id="template">
+			<h2>Template Literals</h2>
+			<p>Enter your first, middle, and last name for an output.</p>
+			<div id="template-input">
+				<input type="text" id="fName" placeholder="First name..."></input>
+				<input type="text" id="mName" placeholder="Middle name..."></input>
+				<input type="text" id="lName" placeholder="Last name..."></input>
+				<button id="templateBtn">Update</button>
+			</div>
+			<p id="setName"></p>
+		</section>
+		<script src="js/main.js"></script>
+	</body>
+
+</html>

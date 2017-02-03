@@ -1,0 +1,31 @@
+html
+	head
+		link(href="https://fonts.googleapis.com/css?family=Maitree", rel="stylesheet")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+	body
+		section
+			a(href='/lists') <-- Back to Lists
+			p List name: #{listData[0].name}
+			h3 Add item:
+			form(method='POST' action='/items')
+				input(type='text', placeholder='Enter item name...' name='name')
+				input(type='text', placeholder='Enter item status...' name='status')
+				input(type='hidden' value=listData[0].id name='my_list_id')
+				button.submit(type=submit) Submit
+			p ------------------------------
+			h3 Items:
+			each val, index in listData[0].items
+				p ++++++++++++++++++++++++++++++
+				p Item name: #{val.name}
+				p Item status: #{val.status}
+				- var link = 'items/' + val.id;
+				- var del = 'items/' + val.id + '/destroy';
+				form(method='GET' action='/' + del)
+					button.submit(type=submit) Delete
+				form(method='POST' action='/edit/' + link)
+					p EDIT
+					input(type='text', value=val.name name='name')
+					input(type='text', value=val.status name='status')
+					button.submit(type=submit) Submit Edit
+				p ++++++++++++++++++++++++++++++
+

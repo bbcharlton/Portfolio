@@ -1,0 +1,462 @@
+/*------------------------------------*\
+  #Body
+\*------------------------------------*/
+
+
+body {
+  margin:                         0;
+  padding:                        0;
+  color:                       #EEE;
+  font-family: 'Oswald', sans-serif;
+}
+
+.glyphicon {
+    font-size: 25px;
+}
+
+
+/*------------------------------------*\
+  #Nav Bar
+\*------------------------------------*/
+
+nav:before {
+	height: 10px;
+	width: 100%;
+	background: #333;
+}
+
+.nav a {
+	width: 100px;
+	margin-left: 25px;
+	text-align: center;
+	background: #333;
+	border-radius: 0 0 5px 5px;
+}
+
+.nav a:link {
+  color:           #EEE;
+  text-decoration: none;
+}
+
+.nav a:visited {
+  color:           #EEE;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color:                   #333;
+  background-color: transparent;
+}
+
+.navbar-toggle {
+	background-color: #333;
+}
+
+.icon-bar {
+	background-color: #EEE;
+}
+
+/*------------------------------------*\
+  #Slideout
+\*------------------------------------*/
+
+
+#slideout {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #EEE;
+	z-index: 3;
+}
+
+#slideout button {
+	top: 0;
+	position: absolute;
+}
+
+#slideout ul {
+	width: 100%;
+	height: auto;
+	list-style: none;
+	position: absolute;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	top: 61px;
+}
+
+
+#slideout a {
+	display: block;
+	padding: 15px 15px;
+	width: 100%;
+	background-color: #333;
+}
+
+#last {
+	border-bottom: 1px solid #EEE;
+}
+
+#slideout a:link {
+	text-decoration: none;
+	color: #EEE;
+}
+
+#slideout a:visited {
+	text-decoration: none;
+	color: #EEE;
+}
+
+#slideout a:hover {
+	background-color: #444;
+}
+
+#slide-out {
+	margin-left: 15px;
+}
+
+#empty {
+	position: absolute;
+	top: 262px;
+	height: 100%;
+	width: 100%;
+	background-color: #444;
+}
+
+
+/*------------------------------------*\
+  #CTA
+\*------------------------------------*/
+
+
+#cta {
+  height: 100%;
+  display: block;
+  background-image: url('../images/cta-bg.jpeg');
+  background-repeat:                   no-repeat;
+  background-size:                         cover;
+  background-position:             center center;
+}
+
+	#cta article {margin: 0 auto;}
+
+	#cta h1 {margin: 150px 0 20px 0;}
+
+
+/*------------------------------------*\
+  #About - Me Image
+\*------------------------------------*/
+
+
+#about {background-color: #EEE;}
+
+	#about .container {
+		padding-top: 25px;
+	}
+
+	#about img {
+	  display:     block;
+	  margin:     0 auto;
+	  width:        100%;
+	  height:       100%;
+	  border-radius: 50%;
+	}
+
+	#about p {
+		padding: 0 0 0 25px;
+		color: #444;
+		text-align: left;
+		line-height: 36px;
+		font-size: 18px;
+	}
+
+	#about article {
+		margin: 25px 0;
+		border-left: 2px solid #CCC;
+	}
+
+#me {
+  position:                        relative;
+  margin:                            0 auto;
+  width:                              200px;
+  height:                             200px;
+  background-image: url('../images/test.jpg');
+  background-size:                    cover;
+  border:                    5px solid #CCC;
+  border-radius:                        50%;
+}
+
+	#me-overlay {
+	  display:     block;
+	  margin:     0 auto;
+	  width:        100%;
+	  height:       100%;
+	  border-radius: 50%;
+	  position: absolute;
+	}
+
+	#me-overlay:hover {background-color: rgba(0,0,0,0.5);}
+
+	#social-media-list {
+	  display:      none;
+	  margin:          0;
+	  padding:    76px 0;
+	  text-align: center;
+	  list-style:   none;
+	}
+
+	#me-overlay:hover #social-media-list {display: block;}
+
+	#social-media-list li:nth-of-type(1) {
+	  display:                           inline-block;
+	  background-image: url('../images/facebook.png');
+	  background-size:                           48px;
+	  background-position:              center center;
+	  opacity:                                    0.5;
+	}
+
+	#social-media-list li:nth-of-type(2) {
+	  display:                          inline-block;
+	  background-image: url('../images/twitter.png');
+	  background-size:                          48px;
+	  background-position:             center center;
+	  opacity:                                   0.5;
+	}
+
+	#social-media-list li:nth-of-type(3) {
+	  display:                           inline-block;
+	  background-image: url('../images/linkedin.png');
+	  background-size:                           48px;
+	  background-position:              center center;
+	  opacity:                                    0.5;
+	}
+
+	#social-media-list a {
+	  display: block;
+	  width:    48px;
+	  height:   48px;
+	}
+
+	#social-media-list li:hover {opacity: 1.0;}
+
+
+/*------------------------------------*\
+  #Video
+\*------------------------------------*/
+
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+
+/*------------------------------------*\
+  #Features
+\*------------------------------------*/
+
+.hidden-feature {
+	display: none;
+}
+
+#features {background-color: #444;}
+
+	#features .container {
+		padding-bottom: 25px;
+	}
+
+	#webskill-content {
+		padding: 25px 0;
+	}
+
+	#features p {
+		text-align: left;
+		padding-left: 25px;
+		border-left: 2px solid #CCC;
+		line-height: 36px;
+		font-size: 18px;
+	}
+
+	#features-content {
+	  visibility: hidden;
+	  min-height: 96px;
+	}
+
+	.webskill {
+	  width: 100%;
+	  max-width: 200px;
+      height: auto;
+      cursor: pointer;
+	}
+
+	.webskill:hover {
+		opacity: .5;
+		animation:spin 0.2s linear;
+	}
+
+	@keyframes spin { 100% {transform:rotate(360deg);}}
+
+
+/*------------------------------------*\
+  #Projects
+\*------------------------------------*/
+
+
+#projects {background-color: #EEE;}
+
+	#projects .row {
+		padding-top: 25px;
+	}
+
+	#projects h1 {
+		color: #333;
+	}
+
+	#projects p {
+		line-height: 32px;
+		font-size: 18px;
+		padding: 10px 0 50px 0;
+		color: #333;
+	}
+
+	#projects img {
+	  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	  transition:                    all 0.3s cubic-bezier(.25,.8,.25,1);
+	}
+
+	#projects img:hover {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+
+
+/*------------------------------------*\
+  #Footer
+\*------------------------------------*/
+
+footer {background-color: #EEE;}
+
+#back-top {
+  color: #EEE;
+  border-radius:                       5px 5px 0 0;
+  background-image: url('../images/footer-bg.png');
+}
+
+#back-top:hover {
+	color: #CCC;
+}
+
+#footer {
+  margin:                                   0 auto;
+  padding:                                  50px 0;
+  text-align:                               center;
+  background-image: url('../images/footer-bg.png');
+}
+
+	#footer img {
+	  width:           20px;
+	  height:          20px;
+	  display: inline-block;
+	}
+
+	#footer p {
+	  padding-left:    15px;
+	  display: inline-block;
+	}
+
+	#footer p:first-of-type {padding-right: 50px;}
+
+
+/*------------------------------------*\
+  #Headings
+\*------------------------------------*/
+
+h1 {font-size: 70px;}
+
+h2 {font-size: 60px;}
+
+h3 {font-size: 50px;}
+
+h1, h2, h3 {text-transform: uppercase;}
+
+
+/*------------------------------------*\
+  #Media Queries
+\*------------------------------------*/
+
+@media (min-width: 768px) {
+
+ 	#slide-in {
+ 		display: none;
+ 	}
+}
+
+@media (max-width: 767px) {
+
+ 	nav:before {
+	  height: 0;
+	}
+
+	#cta h1, #cta h3 {
+	  background-color: #333;
+	  color: #EEE;
+	}
+
+	.glyphicon {
+      font-size: 25px;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.glyphicon {
+      font-size: 25px;
+	}
+}
+
+
+
+
+
+
+
+
+
+

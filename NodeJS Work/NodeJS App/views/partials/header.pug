@@ -1,0 +1,44 @@
+nav.navbar.navbar-default.navbar-fixed-top
+	.container
+		.navbar-header
+			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+				span.glyphicon.glyphicon-menu-hamburger
+			a.navbar-brand(href='/') 
+				p
+					i.fa.fa-rocket
+					|     WD-6 Launches
+		#navbar-collapse.collapse.navbar-collapse
+			ul.nav.navbar-nav
+				li
+					a(href='/blog') Blog
+			if session
+				ul.nav.navbar-nav.navbar-right
+					li
+						a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')= session.user.email 
+							span.caret
+						ul.dropdown-menu
+							li
+								a(href='/profile') Profile
+							li
+								a(href='/logout') Logout
+			else
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='/login') Login
+					li
+						a(href='/register') Register
+			form.navbar-form.navbar-right(role='form', method='POST', action="/search")
+				.form-group.info-parent
+					.input-group
+						div.input-group-addon
+							span.glyphicon.glyphicon-question-sign
+							div.info-child
+								p
+									b(style="color: #F5B700") Search Options:
+								p Title
+								p Next: next/#
+								p Date: yyyy-mm-dd
+						input.form-control(type='text', name='search', placeholder='Search...')
+						span.input-group-btn
+							button.btn(type='submit')
+								span.glyphicon.glyphicon-search

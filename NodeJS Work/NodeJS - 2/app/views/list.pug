@@ -1,0 +1,49 @@
+html
+	head
+		link(href="https://fonts.googleapis.com/css?family=Maitree", rel="stylesheet")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+		style
+			include main.css
+	body
+		a(href='/lists') <-- Back To Lists
+		div.container
+			h1 VIEW LISTS BELOW
+
+			section
+				each val, index in listData
+					if (val._id == listID)
+						- var title = val.title;
+						- var id = val._id;
+						div
+							p Title: #{title}
+							p ID: #{id}
+							p ------------------------------
+							form(method='POST' action='../items')
+								p Create an Item
+								p Status must be either 'Complete' or Incomplete
+								input(type='text', placeholder='Enter item name...' name='name')
+								input(type='text', placeholder='Enter status...' name='status')
+								input(type='hidden', value=val._id name='parent')
+								button.submit(type=submit) Submit
+							p ------------------------------
+							h3 Items:
+							each val2 in itemData
+								if (parseInt(id) == parseInt(val2.parent))
+									- var name = val2.name;
+									- var status = val2.status;
+									- var link = 'items/delete/' + val2._id;
+									div.item
+										p Name: #{name}
+										p Status: #{status}
+										button.editBtn Edit
+										= '\n'
+										form(method='POST' action='../' + link)
+											button.submit(type=submit) Delete
+										form(method='POST' action='../items/edit/' + val2._id).editForm
+											p EDIT
+											input(type='text', value=val2.name name='name')
+											input(type='text', value=val2.status name='status')
+											input(type='hidden', value=val2.parent name='parent')
+											button.submit(type=submit) Save
+		script
+			include main.js

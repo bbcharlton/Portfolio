@@ -1,0 +1,103 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #508CA4;
+	color: #333;
+	font-family: 'Maitree', serif;
+}
+
+input {
+	font-size: 20px;
+	border: none;
+	padding: 15px 25px;
+	margin: 15px 0;
+}
+
+input[type=text] {
+	margin-right: 15px;
+}
+
+#form-container {
+	height: 95vh;
+	background-color: #004F2D;
+	border-bottom: solid 3px #EEE;
+}
+
+#content {
+	height: 100%;
+}
+
+#blog-list {
+	padding: 0;
+}
+
+.container {
+	margin: 0 100px;
+}
+
+.submit {
+	font-size: 18px;
+	border: none;
+	width: 100%;
+	text-align: center;
+	padding: 25px 0;
+	color: #EEE;
+	background-color: #508CA4;
+}
+
+
+.submit:hover {
+	cursor: pointer;
+}
+
+.left-content {
+	float: left;
+	width: 25%;
+}
+
+.right-content {
+	float: right;
+	width: 75%;
+}
+
+.sumInput {
+	width: 100%;
+	padding-bottom: 181;
+}
+
+.fullInput {
+	padding-bottom: 300px;
+	width: 100%;
+}
+
+.blog {
+	border: solid 1px #CCC;
+	background-color: #BFD7EA;
+	border-radius: 5px;
+	word-wrap: break-word;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.blog button {
+	float: right;
+	margin: 0 15px 10px 0;
+}
+
+.blog h1 {
+	margin: 10px 15px 10px 50px;
+}
+
+.summary, .body {
+	margin: 5px 50px;
+	line-height: 25px;
+}
+
+.body {
+	display: none;
+}
+
+.heading h1, .heading p {
+	display: inline-block;
+}

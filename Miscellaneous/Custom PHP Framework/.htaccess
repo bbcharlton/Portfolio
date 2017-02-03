@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteBase /
+
+# Protect application and system files from being viewed when the index.php is missing
+RewriteCond $1 ^(application|system|private|logs)
+
+# Rewrite to index.php/access_denied/URL
+RewriteRule ^(.*)$ index.php/access_denied/$1 [PT,L]
+
+# Allow these directories and files to be displayed directly:
+RewriteCond $1 ^(index\.php|robots\.txt|opensearch\.xml|favicon\.ico|assets|forums)
+
+# No rewriting
+RewriteRule ^(.*)$ - [PT,L]
+
+# Rewrite to index.php/URL
+RewriteBase /    
+RewriteCond %{HTTP_HOST} !=""
+RewriteRule ^index.php(/.*)?$ http://%{HTTP_HOST}$1 [R=301]
+RewriteRule ^(.*)$ index.php/$1 [PT,L]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://127.0.0.1/$1 [R,L]

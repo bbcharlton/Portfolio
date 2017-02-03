@@ -1,0 +1,106 @@
+body {
+	margin: 0;
+	font: 16px/30px Helvetica, sans-serif;
+	color: #EEE;
+}
+
+#cta {
+	background-color: #59C9A5;
+	padding: 275px 0;
+}
+
+#cta h1 {
+	margin: 0 auto;
+	padding: 25px;
+	width: 50%;
+	font-size: 24px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.2);
+}
+
+#arrow, #default, #template {
+	background-color: #465775;
+	text-align: center;
+}
+
+h2 {
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px 0;
+	background-color: #333;
+}
+
+#arrow button, #default button {
+	margin: 120px auto;
+	text-align: center;
+	border: none;
+	width: 200px;
+	height: 50px;
+	background-color: #EEE;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#block, #destruct, #rest {
+	background-color: #EF6F6C;
+	text-align: center;
+}
+
+#block pre, #destruct pre, #spread pre {
+	color: #333;
+	padding: 10px;
+	text-align: left;
+	background-color: #EEE;
+	width: 50%;
+	margin: 0 auto
+}
+
+#block p:first-of-type, #classes p:first-of-type, #destruct p:first-of-type, #generator p:first-of-type, #rest p:first-of-type, #spread p:first-of-type, #template p:first-of-type  {
+	padding-top: 50px;
+	margin-top: 0px;
+}
+
+#block p:last-of-type, #classes p:last-of-type, #destruct p:last-of-type, #gen-input, #rest p:last-of-type, #spread p:last-of-type, #template p:last-of-type {
+	margin-bottom: 0px;
+	padding-bottom: 50px;
+}
+
+#classes, #generator, #spread {
+	background-color: #59C9A5;
+	text-align: center;
+}
+
+#class-input, #gen-input, #template-input {
+	width: 50%;
+	margin: 0 auto;
+}
+
+#personType, #personSize, #personMood {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#classes input[type=text], #generator input[type=text], #template input[type=text] {
+	border: none;
+	padding: 5px;
+	width: 25%;
+}
+
+#classBtn, #genBtn, #templateBtn {
+	border: none;
+	padding: 5px;
+	width: 75px;
+	background-color: #EEE;
+	color: #333;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+

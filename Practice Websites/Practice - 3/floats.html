@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Explore the World</title>
+		<!-- Imported font family -->
+		<link href='https://fonts.googleapis.com/css?family=Oranienbaum' rel='stylesheet' type='text/css'>
+		<link href="css/main.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+		<!-- Script copied from codepen for animation scrolling -->
+		<script>
+			$(document).ready(function(){
+			  $("a").on('click', function(event) {
+
+			    if (this.hash !== "") {
+
+			      event.preventDefault();
+
+			      var hash = this.hash;
+
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        window.location.hash = hash;
+			      });
+			    }
+			  });
+			});
+		</script>
+		<!-- End of copied script -->
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#discover">Discover</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="top">
+			<article>
+				<span></span>
+				<h1>Explore the World</h1>
+
+				<p>The world is a beautiful place, and we're here to show you its beauty.</p>
+			</article>
+		</section>
+
+		<section id="discover">
+			<article>
+				<h1>Discover Beauty</h1>
+
+				<figure>
+					<img src="images/image-1.svg" alt="Image 1" width="400" height="200">
+					<img src="images/image-2.svg" alt="Image 2" width="400" height="200">
+					<img src="images/image-3.svg" alt="Image 3" width="400" height="200">
+				</figure>
+
+				<figure>
+					<img src="images/image-4.svg" alt="Image 4" width="400" height="200">
+					<img src="images/image-5.svg" alt="Image 5" width="400" height="200">
+					<img src="images/image-6.svg" alt="Image 6" width="400" height="200">
+				</figure>
+
+				<figure>
+					<img src="images/image-7.svg" alt="Image 7" width="400" height="200">
+					<img src="images/image-8.svg" alt="Image 8" width="400" height="200">
+					<img src="images/image-9.svg" alt="Image 9" width="400" height="200">
+				</figure>
+			</article>
+		</section>
+
+		<section id="about">
+			<article>
+				<h1>About Us</h1>
+				<p>We take professional photographs of the beautiful world we live in. The images you find here and in our weekly newsletter are images we take to keep you inspired to explore the world and find its inner beautys. We firmly believe that no matter where you go, there's always something beautiful to see. 
+
+				<br />
+				<br />
+
+				Our beautiful world supplies us with countless views to take jaw-dropping photos. We send our photographers all over the world to find these areas and experience them for all of us. But don't let them enjoy all of the fun. It's you who should join in. Go out and explore the world.</p>
+			</article>
+		</section>
+
+		<section id="contact">
+			<article>
+				<h1>Contact Us</h1>
+
+				<p>Need to contact us? Feel free to send us a message in the form to the right. We're all ears for our viewer's feedback and suggestions. We also like to hear from you about some nice places to visit for beautiful photograph chances. Your email will deliver instantly, however, we may take up to 24 hours to reply back to you. Meanwhile, enjoy the world as we bring it to you.</p>
+
+				<form action="#">
+					<label for="email"></label><br />
+					<input type="email" name="email" placeholder="Enter email..." required><br />
+					
+					<label for="text-area"></label><br />
+					<textarea type="text" name="text-area" placeholder="Message..." required></textarea><br />
+		  
+					<button id="button">Submit</button>
+				</form>
+			</article>
+		</section>
+		<footer>
+			<p>Site by Bailey Charlton</p>
+		</footer>
+		
+		<script src="js/main.js"></script>
+	</body>
+</html>

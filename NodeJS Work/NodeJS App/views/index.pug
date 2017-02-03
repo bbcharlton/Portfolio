@@ -1,0 +1,41 @@
+extends layout
+
+block content
+	div.container
+		if !error
+			each val in data
+				.panel-group
+					.panel.panel-hover
+						.panel-heading
+							h3
+								if session
+									form(role='form', method='POST', action="/profile")
+										input(type='hidden', name='objID', value=val.id)
+										input(type='hidden', name='objName', value=val.name)
+										input(type='hidden', name='objVidURLs', value=val.vidURLs[0])
+										input(type='hidden', name='objVidURL', value=val.vidURL)
+										input(type='hidden', name='objWindowstart', value=val.windowstart)
+										input(type='hidden', name='objLocation', value=val.location.name)
+										button(type='submit')
+											i.fa.fa-plus  
+										span= val.name
+								else
+									span= val.name
+						.panel-footer
+							if val.vidURLs.length > 0
+								a.pull-right(href=val.vidURLs[0], target='blank')
+									i.fa.fa-3x.fa-circle.back
+									i.fa.fa-3x.fa-play-circle.yesURL
+							else if val.vidURL
+								if val.vidURL != null
+									i.fa.fa-3x.fa-circle.back
+									i.fa.fa-3x.fa-play-circle.pull-right.yesURL
+							p.pull-left= val.windowstart
+							br
+							p.pull-left= val.location.name
+							span.clearfix
+		else
+			.panel-group
+					.panel
+						.panel-body.text-center
+							h3 No results found!

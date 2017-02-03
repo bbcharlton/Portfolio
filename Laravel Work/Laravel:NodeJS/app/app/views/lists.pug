@@ -1,0 +1,23 @@
+html
+	head
+		link(href="https://fonts.googleapis.com/css?family=Maitree", rel="stylesheet")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+	body
+		div#form-container
+			div.container
+				form(method='POST' action='lists')
+					p Create a List
+					input(type='text', placeholder='Enter list name...' name='name')
+					button.submit(type=submit) Submit
+
+		div.container
+			h1 VIEW LISTS BELOW
+
+			section
+				each val, index in listData
+					div
+						- var id = listData[index].id;
+						- var link = 'lists/' + id;
+						p= listData[index].name
+						a(href='/' + link) View List
+						p ------------------------------

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	div.container
+		.panel-group
+				.panel
+					.panel-heading.space-banner
+						h3
+							i.fa.fa-rocket  
+							| #{data.title}
+					.panel-body
+						h3= data.description
+						p.body= data.body

@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	background-image: url('../images/bg.jpg');
+	font: 18px/35px Helvetica, sans-serif;
+}
+
+:not(section, article, h1, p) {
+	background-color: #000;
+}
+
+ul:only-child {
+	background-color: #333;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+li a[target], li a:link {
+	float: right;
+    display: block;
+    color: #EEE;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+	color: #333;
+	background-color: #CCC;
+}
+
+li a:active {
+	color: #805959;
+}
+
+section > article {
+	width: 70%;
+	margin: 0 auto;
+	background-color: #E6E6E6;
+}
+
+p:last-child {
+	font-weight: bold;
+}
+
+p:nth-last-of-type(2), p:nth-child(3) {
+	font-style:italic;
+}
+
+h1:only-of-type {
+	font-size: 25px;
+	color: #EEE;
+	background-color: #805959;
+	margin: 0;
+	padding: 15px 0 15px 25px;
+}
+
+h1 + p {
+	font: bold 20px/35px Helvetica, sans-serif;;
+}
+
+h1 ~ p {
+	margin: 0;
+	padding: 20px 25px;
+	color: #333;
+}
+
+figure {
+	margin: 0;
+	text-align: center;
+}
+
+img[src*='.png']{
+    max-width: 100%;
+    height: auto;
+}
+
+img[alt~="Jupiter"] {
+	box-shadow: 1px 1px 5px #888888;
+}
+
+table {
+	width: 100%; 
+	border-collapse: collapse; 
+}
+
+tr:nth-of-type(even) { 
+	background: white;
+}
+
+th { 
+	background: #333; 
+	color: #EEE;
+	text-transform: uppercase;
+}
+
+td, th { 
+	padding: 5px 20px; 
+	border: 1px solid #CCC; 
+	text-align: center; 
+}
+
+th:first-child, th:last-child {
+	background: black;
+}
+
+td:nth-child(2) {
+	color: #EEE;
+	background-color: #333;
+}
+
+td:first-of-type {
+	font-size: 24px;
+}
+
+td:last-of-type {
+	font-style: italic;
+}
+
+
+
+
+
+
+
+

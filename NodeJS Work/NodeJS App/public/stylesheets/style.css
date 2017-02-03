@@ -1,0 +1,259 @@
+body {
+  padding-top: 70px;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #FAFAFA;
+  background-image: url('../images/repeat-2.jpg');
+}
+
+h3 {
+	margin-bottom: 20px;
+	color: white;
+}
+
+input {
+	border: none;
+}
+
+textarea.form-control {
+	height: 300px;
+}
+
+#navbar-collapse>ul.nav.navbar-nav.navbar-right>li>ul>li> a {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.info-parent {
+	position: relative;
+}
+
+.info-child {
+	margin-top: 9px;
+	margin-left: -12px;
+	display: none;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 9999999;
+}
+
+.body {
+	white-space: pre-line;
+}
+
+.edit, .delete {
+	margin-right: 15px;
+}
+
+.edit {
+	background-color: #333 !important;
+}
+
+.edit:hover {
+	background-color: #373F46 !important;
+}
+
+.delete {
+	background-color: #D9534F !important;
+}
+
+.delete:hover {
+	background-color: #C9302C !important;
+}
+
+.btn {
+	color: white;
+	background-color: #F5B700;
+}
+
+.cancel {
+	margin-top: 15px;
+	color: white;
+	background-color: #424C55;
+}
+
+.blog {
+	margin-bottom: 15px;
+}
+
+.btn:hover {
+	color: white;
+	background-color: #C99600;
+}
+
+.cancel:hover {
+	color: white;
+	background-color: #373F46;
+}
+
+.navbar-header>button>span {
+	color: white;
+}
+
+.navbar-header>button:hover {
+	border: 1px solid #F5B700;
+}
+
+/*=====================================================================================*/
+/* Source: http://stackoverflow.com/questions/16771225/css3-rotate-animation */
+
+.navbar-header>button:hover>span {
+	color: #F5B700;
+	-webkit-animation:spin 0.2s linear;
+    -moz-animation:spin 0.2s linear;
+    animation:spin 0.2s linear;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(180deg); transform:rotate(180deg); } }
+
+/*=====================================================================================*/
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.navbar-fixed-top {
+	border-width: 0 0 3px;
+}
+
+.navbar-default {
+	border-color: white;
+	background-color: #333;
+}
+
+.navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-brand:focus {
+	color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #F5B700;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #F5B700;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar {
+	color: #F5B700;
+}
+
+h3 .fa-rocket {
+	margin-right: 15px;
+}
+
+a.btn>i {
+	margin-right: 5px;
+}
+
+h3>form>button {
+	margin-right: 15px;
+	border: none;
+	background-color: transparent;
+}
+
+h3>form>button:focus {
+	outline: none;
+}
+
+h3>form>button>i {
+	color: #F5B700;
+}
+
+h3>form>button>i:hover {
+	color: #C99600;
+}
+
+.panel, .panel-hover {
+	border: 0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.panel-hover:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.panel-body {
+	background-color: white;
+}
+
+.panel-body h3 {
+	color: #333;
+}
+
+.panel-heading {
+	background-color: #46237A;
+}
+
+.space-banner {
+	background-image: url('../images/space.jpg');
+}
+
+.panel-group:nth-of-type(2n+0) .panel-heading {
+	background-color: #311855;
+}
+
+.panel-group .panel-footer {
+	border-top: 1px solid #DDD;
+}
+
+.panel-footer {
+	color: #333;
+	background-color: white;
+}
+
+.panel-footer p {
+	margin-bottom: 0;
+}
+
+.panel-footer .back {
+	margin-top: -32px;
+	margin-left: -36px;
+	position: absolute;
+	color: white;
+}
+
+.panel-footer .yesURL {
+	position: absolute;
+	margin-top: -32px;
+	margin-left: -36px;
+	color: #F5B700;
+}
+
+.panel-footer .yesURL:hover {
+	color: #C99600;
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+		color: white;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+		color: white;
+		background-color: rgba(255,255,255,0.1);
+	}
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

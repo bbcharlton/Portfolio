@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	div.container
+		if session
+			if session.user.role == 'admin'
+				a.btn.pull-right.blog(href='/blog/new')
+					i.fa.fa-plus 
+					| New Blog
+		span.clearfix
+		each val in blogs
+			- var link = '/blog/view/' + val._id;
+			- var edit = '/blog/edit/' + val._id;
+			- var remove = '/blog/delete/' + val._id;
+			.panel-group
+					.panel
+						.panel-heading.space-banner
+							h3
+								i.fa.fa-rocket  
+								| #{val.title}
+						.panel-body
+							h3= val.description
+							a.btn.pull-right(href=link) Read More
+							if session
+								if session.user.role == 'admin'
+									a.btn.pull-right.edit(href=edit) Edit
+									a.btn.pull-right.delete(href=remove) Delete

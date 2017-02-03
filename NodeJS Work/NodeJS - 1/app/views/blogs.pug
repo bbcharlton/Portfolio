@@ -1,0 +1,43 @@
+html
+	head
+		link(href="https://fonts.googleapis.com/css?family=Maitree", rel="stylesheet")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+		style
+			include main.css
+	body
+		div#form-container
+			div.container
+				form(method='POST' action='/blog/saveBlog')
+					div.left-content
+						input(type='text', placeholder='Enter title...' name='title')
+						br
+
+						input(type='text', placeholder='Enter date...' name='date')
+						br
+
+						input(type='text', placeholder='Enter author...' name='author')
+
+					div.right-content
+						input.sumInput(type='textarea' placeholder='Enter summary...' name='summary')
+
+					input.fullInput(type='textarea' placeholder='Enter full text...' name='body')
+					br
+
+					button.submit(type=submit) Submit
+
+		div#content.container
+			h1 VIEW BLOGS BELOW
+
+			section#blog-list
+				each val, index in data
+					div.blog
+						div.heading
+							h1= data[index].title
+							p= data[index].date
+							p / 
+							p= data[index].author
+						p.summary= data[index].summary
+						p.body= data[index].body
+						button.view-more View More
+		script
+			include main.js

@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+	div.container
+		div.row
+			if error
+				div.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-md-offset-3.col-lg-offset-3
+					div.alert.alert-danger.alert-dismissable
+						a.close(href='#', data-dismiss='alert', aria-label='close') ×
+						p= error
+
+			.panel-group.col-xs-12.col-sm-12.col-md-6.col-lg-6.col-md-offset-3.col-lg-offset-3
+				.panel
+					.panel-heading
+						h3 User Registration
+					.panel-body
+						form(role='form', method='POST', action="/register")
+							div.form-group
+								input#email.form-control(type='email', name='email', placeholder='Enter email...', required='', autofocus='')
+							div.form-group
+								input#password.form-control(type='password', name='password', placeholder='Enter password...', required='')
+							div.form-group
+								input#confirmPassword.form-control(type='password', name='confirmPassword',placeholder='Confirm password...', required='')
+							div.form-group
+								button.btn.col-xs-12.col-sm-12.col-md-12.col-lg-12(type='submit') Register
+							div.form-group
+								a.btn.cancel.col-xs-12.col-sm-12.col-md-12.col-lg-12(href='/') Cancel

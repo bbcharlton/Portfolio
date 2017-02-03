@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Planet Jupiter</title>
+		<link href="css/main.css" rel="stylesheet">
+		<!-- Script copied from codepen for animation scrolling -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  $("a").on('click', function(event) {
+
+			    if (this.hash !== "") {
+
+			      event.preventDefault();
+
+			      var hash = this.hash;
+
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        window.location.hash = hash;
+			      });
+			    }
+			  });
+			});
+		</script>
+		<!-- End of copied script -->
+	</head>
+	<body>
+		<section id="top">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="#future" target="_blank">Future</a></li>
+						<li><a href="#missions" target="_blank">Missions</a></li>
+						<li><a href="#history" target="_blank">History</a></li>
+						<li><a href="#about" target="_blank">About</a></li>
+					</ul>
+				</nav>
+			</header>
+		</section>
+
+		<section id="about">
+			<article>
+				<h1>About Jupiter</h1>
+
+				<p>Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a giant planet with a mass one-thousandth that of the Sun, but two and a half times that of all the other planets in the Solar System combined. Jupiter is a gas giant, along with Saturn. Jupiter was known to astronomers of ancient times. When viewed from Earth, Jupiter can reach an apparent magnitude of −2.94, bright enough for its reflected light to cast shadows,and making it on average the third-brightest object in the night sky after the Moon and Venus.</p>
+
+				<p>Jupiter is primarily composed of hydrogen with a quarter of its mass being helium, though helium comprises only about a tenth of the number of molecules. It may also have a rocky core of heavier elements, but like the other giant planets, Jupiter lacks a well-defined solid surface. Because of its rapid rotation, the planet's shape is that of an oblate spheroid (it has a slight but noticeable bulge around the equator). The outer atmosphere is visibly segregated into several bands at different latitudes, resulting in turbulence and storms along their interacting boundaries. A prominent result is the Great Red Spot, a giant storm that is known to have existed since at least the 17th century when it was first seen by telescope. Surrounding Jupiter is a faint planetary ring system and a powerful magnetosphere. Jupiter has at least 67 moons, including the four large Galilean moons discovered by Galileo Galilei in 1610.</p>
+
+				<figure>
+					<img src="https://csdrive.srru.ac.th/54122420208/solar/texture/jupiter.png" alt="Jupiter">
+				</figure>
+
+				<p>In 1953, the Miller–Urey experiment demonstrated that a combination of lightning and the chemical compounds that existed in the atmosphere of a primordial Earth could form organic compounds (including amino acids) that could serve as the building blocks of life. The simulated atmosphere included water, methane, ammonia, and molecular hydrogen, all molecules still found in Jupiter's atmosphere. Jupiter's atmosphere has a strong vertical air circulation, which would carry these compounds down into the lower regions. The higher temperatures within the interior of the atmosphere would break down these chemicals, hindering the formation of Earth-like life.</p>
+
+				<p>It is considered highly unlikely that there is any Earth-like life on Jupiter, because there is only a small amount of water in Jupiter's atmosphere and any possible solid surface deep within Jupiter would be under extreme pressures. Still, it has been hypothesized that ammonia- or water-based life could evolve in Jupiter's upper atmosphere. The possible presence of underground oceans on some of Jupiter's moons has led to speculation that the presence of life is more likely there.</p>
+			</article>
+		</section>
+
+		<section id="history">
+			<article>
+				<h1>History of Jupiter</h1>
+
+				<p>The planet Jupiter has been known since ancient times. It is visible to the naked eye in the night sky and can occasionally be seen in the daytime when the Sun is low. To the Babylonians, this object represented their god Marduk. They used Jupiter's roughly 12-year orbit along the ecliptic to define the constellations of their zodiac.</p>
+
+				<p>The Romans named it after Jupiter, the principal god of Roman mythology, whose name comes from the Proto-Indo-European vocative compound *Dyēu-pəter. In turn, Jupiter was the counterpart to the mythical Greek Zeus, also referred to as Dias, the planetary name of which is retained in modern Greek.</p>
+
+				<figure>
+					<img src="http://apps.dmns.org/Pompeii-Quiz-interactive/images/Jupiter.png" alt="Roman Jupiter">
+				</figure>
+
+				<p>In 1610, Galileo Galilei turned his rudimentary telescope on Jupiter, and realized that it had 4 large moons orbiting it: Io, Europa, Ganymede and Callisto. This was an important discovery, because it demonstrated that Earth was not the center of the Universe as proponents of the geocentric view believed.</p>
+
+				<p>In the1660s, Giovanni Cassini used his telescope to discover spots and bands across the surface of Jupiter, and was able to estimate the planet’s rotational period. He is thought to be the first to observe the planet’s Great Red Spot, a giant storm that is still raging. Imagine a single storm that rages for over 450 years and is larger than the Earth.</p>
+			</article>
+		</section>
+
+		<section id="missions">
+			<article>
+				<h1>Missions to Jupiter</h1>
+
+				<table>
+					<th scope="col">Mission</th>
+					<th scope="col">Country</th>
+					<th scope="col">Launch Date</th>
+					<th scope="col">Arrival Date</th>
+					<th scope="col">Type</th>
+					<th scope="col">Details</th>
+					
+					<tr scope="row">
+						<td>Pioneer 11</td>
+						<td>USA</td>
+						<td>Apr 6, 1973</td>
+						<td>Sep 1, 1979</td>
+						<td>Flyby</td>
+						<td>Returned detailed pictures of Jupiter and Jupiter's Great Red Spot.</td>
+					</tr>
+					
+					<tr scope="row">
+						<td>Voyager 1</td>
+						<td>USA</td>
+						<td>Sep 5, 1977</td>
+						<td>Nov 13, 1980</td>
+						<td>Flyby</td>
+						<td>Returned photographs and information on Jupiter's many moons.</td>
+					</tr>
+					
+					<tr scope="row">
+						<td>Voyager 2</td>
+						<td>USA</td>
+						<td>Aug 20, 1977</td>
+						<td>Aug 26, 1981</td>
+						<td>Flyby</td>
+						<td>Showed that Jupiter's Great Red Spot is really a complex storm, and that Io, one of Jupiter's moons, has active volcanism.</td>
+					</tr>
+
+					<tr scope="row">
+						<td>Galileo</td>
+						<td>USA & EU</td>
+						<td>Oct 18, 1989</td>
+						<td>Feb 10, 1990</td>
+						<td>Orbiter/Probe</td>
+						<td>The Galileo Probe is currently observing the Jupiter system.</td>
+					</tr>
+
+					<tr scope="row">
+						<td>Juno</td>
+						<td>USA</td>
+						<td>Aug 5, 2011</td>
+						<td>Jul 4, 2016</td>
+						<td>Orbiter/Probe</td>
+						<td>Information or images yet to be released.</td>
+					</tr>
+				</table>
+			</article>
+		</section>
+
+		<section id="future">
+			<article>
+				<h1>Future of Jupiter</h1>
+
+				<p>NASA launched Juno on August 5, 2011 to study Jupiter in detail from a polar orbit when it arrives in 2016. The spacecraft will be placed in a polar orbit to study the planet's composition, gravity field, magnetic field, and polar magnetosphere. Juno will also search for clues about how Jupiter formed, including whether the planet has a rocky core, the amount of water present within the deep atmosphere, and how the mass is distributed within the planet. Juno will also study Jupiter's deep winds, which can reach speeds of 600 km/h.</p> 
+
+				<p>ESA's Jupiter Icy Moon Explorer (JUICE) has been selected as part of ESA's Cosmic Vision science program. It is expected to launch in 2022 and, after a series of flybys in the inner Solar System, arrive in 2030. In 2012, the European Space Agency's selected the JUpiter ICy moon Explorer (JUICE) as its first Large mission, replacing its contribution to EJSM, the Jupiter Ganymede Orbiter (JGO). The partnership for the Europa Jupiter System Mission has since ended, but NASA will continue to contribute the European mission with hardware and an instrument.</p>
+
+				<p>The Europa Clipper is a mission proposed to NASA to focus on studying Jupiter's moon Europa.[58] In March 2013, funds were authorized for "pre-formulation and/or formulation activities for a mission that meets the science goals outlined for the Jupiter Europa mission in the most recent planetary decadal survey". The proposed mission would be set to launch in the early 2020s and reach Europa after a 6.5 year cruise. The spacecraft would fly by the moon 32 times to minimize radiation damage.</p>
+
+				<p>While scientists require further evidence to determine the extent of a rocky core on Jupiter, its Galilean moons provide the potential opportunity for future human exploration. Particular targets are Europa, due to its potential for life, and Callisto, due to its relatively low radiation dose. In 2003, NASA proposed a program called Human Outer Planets Exploration (HOPE) that involved sending astronauts to explore the Galilean moons. NASA has projected a possible attempt some time in the 2040s. In the Vision for Space Exploration policy announced in January 2004, NASA discussed missions beyond Mars, mentioning that a "human research presence" may be desirable on Jupiter's moons. Before the JIMO mission was cancelled, NASA administrator Sean O'Keefe stated that "human explorers will follow."</p>
+			</article>
+		</section>
+	</body>
+</html>
