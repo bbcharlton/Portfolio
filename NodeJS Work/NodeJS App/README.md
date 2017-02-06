@@ -1,0 +1,1 @@
+This was a final class project using the Launchlibrary API to receive information about rocket launches. It then takes that information and displays it in cards. Users can register and login to save each rocket card. Admins can also create blog articles. Application uses a custom design and is fully responsive.

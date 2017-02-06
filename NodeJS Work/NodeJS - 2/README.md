@@ -1,0 +1,1 @@
+This Node application is a basic list application. You can create custom lists and each list has its own items. Full CRUD functionality.

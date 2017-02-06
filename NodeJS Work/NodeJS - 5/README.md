@@ -1,0 +1,1 @@
+This Node application is a test application using mongoose and models. It creates users who can then have individual pets.

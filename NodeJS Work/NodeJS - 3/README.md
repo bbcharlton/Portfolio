@@ -1,0 +1,1 @@
+This Node application is a basic CRUD application for user management.
