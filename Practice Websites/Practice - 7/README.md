@@ -1,0 +1,1 @@
+This website was an assignment website to explain the code differences from Ecmascript 5 and Ecmascript 6, using examples.

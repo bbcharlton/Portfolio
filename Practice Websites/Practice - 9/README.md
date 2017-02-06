@@ -1,0 +1,1 @@
+This was a beginner site where I created a 2 player turn-based game using only JavaScript. Players can choose one of three classes. Each class has their own unique abilities. The players must then fight until they deplete the other player's health to 0.
