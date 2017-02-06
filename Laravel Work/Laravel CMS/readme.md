@@ -2,6 +2,7 @@ This a fully custom designed Content Management System I made for a showcase. Th
 
 Admins can:
   - Create, Update, and Delete users. (Except other admins)
+  - Assign roles to users.
   - Create, Update, and Delete articles.
   - Delete users' profile statuses.
   
