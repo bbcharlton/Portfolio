@@ -11,12 +11,10 @@
 |
 */
 
-Route::get('/', 'UserController@create');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::post('/users', 'UserController@store');
+Auth::routes();
 
-Route::resource('posts', 'PostController', ['except' => ['destroy']]);
-
-Route::get('/posts/{id}/destroy', 'PostController@destroy');
-
-Route::post('/comments', 'CommentController@store');
+Route::get('/home', 'HomeController@index');

@@ -11,8 +11,18 @@
 |
 */
 
-Route::get('/', 'RootController@home');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/contact', 'RootController@contact');
+Route::get('/lists/{id}', function () {
+    return view('lists');
+});
 
-Route::post('/contact', 'RootController@store');
+Route::get('/create', function () {
+    return view('create');
+});
+
+Route::post('/create', function () {
+    return redirect('/');
+});

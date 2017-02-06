@@ -1,17 +1,27 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+@section('title', 'Home')
 
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@section('header')
+	@parent
+	<p>This is appended to the master header</p>
+@endsection
+
+@section('content')
+	@if ($loggedIn)
+		<h1>Welcome!</h1>
+	@else
+		<h1>Join us!</h1>
+	@endif
+
+	<p>This is my body content.</p>
+	<ul>
+		@foreach ($users as $user)
+			<li>This is user {{ $user }}</li>
+		@endforeach
+	</ul>
+
+	<ul>
+		@each('part.user', $users, 'user')
+	</ul>
 @endsection

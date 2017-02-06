@@ -79,8 +79,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Lists
                 </div>
+
+                <a href="/lists/2">Work</a>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>

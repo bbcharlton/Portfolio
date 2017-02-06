@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'RootController@home');
 
-Auth::routes();
+Route::get('/contact', 'RootController@contact');
 
-Route::get('/home', 'HomeController@index');
+Route::post('/contact', 'RootController@store');
